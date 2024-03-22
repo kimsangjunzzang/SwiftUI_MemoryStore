@@ -1,0 +1,46 @@
+[
+  {
+    "id" : "pohang",
+    "name" : "postech",
+    "image" : "map-pohang",
+    "latitude" : 36.0190178,
+    "longitude" : 129.3434808
+  },
+  {
+    "id" : "jeonju",
+    "name" : "jeonjuHanokmael",
+    "image" : "map-jeonju",
+    "latitude" : 35.8242238,
+    "longitude" : 127.1479532
+  },
+  
+  
+  {
+    "id" : "gwangju",
+    "name" : "sangmujigu",
+    "image" : "map-Gwangju",
+    "latitude" : 35.1595454 ,
+    "longitude" : 126.8526012
+  },
+  {
+    "id" : "busan",
+    "name" : "heaundea",
+    "image" : "map-busan",
+    "latitude" : 35.1795543,
+    "longitude" :  129.0756416
+  },
+  {
+    "id" : "deagu",
+    "name" : "susunggu",
+    "image" : "map-deagu",
+    "latitude" : 35.8714354 ,
+    "longitude" : 128.601445
+  },
+  {
+    "id" : "jeju",
+    "name" : "jejudo",
+    "image" : "map-jeju",
+    "latitude" : 33.525369,
+    "longitude" :  126.874237
+  }
+]
