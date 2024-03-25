@@ -1,46 +1,84 @@
 [
-  {
-    "id" : "pohang",
-    "name" : "postech",
-    "image" : "map-pohang",
-    "latitude" : 36.0190178,
-    "longitude" : 129.3434808
-  },
-  {
-    "id" : "jeonju",
-    "name" : "jeonjuHanokmael",
-    "image" : "map-jeonju",
-    "latitude" : 35.8242238,
-    "longitude" : 127.1479532
-  },
-  
-  
-  {
-    "id" : "gwangju",
-    "name" : "sangmujigu",
-    "image" : "map-Gwangju",
-    "latitude" : 35.1595454 ,
-    "longitude" : 126.8526012
-  },
-  {
-    "id" : "busan",
-    "name" : "heaundea",
-    "image" : "map-busan",
-    "latitude" : 35.1795543,
-    "longitude" :  129.0756416
-  },
-  {
-    "id" : "deagu",
-    "name" : "susunggu",
-    "image" : "map-deagu",
-    "latitude" : 35.8714354 ,
-    "longitude" : 128.601445
-  },
-  {
-    "id" : "jeju",
-    "name" : "jejudo",
-    "image" : "map-jeju",
-    "latitude" : 33.525369,
-    "longitude" :  126.874237
-  }
+    {
+        "id" : "포항",
+        "places": [
+            {
+                "name": "포항 해수욕장",
+                "id" : "1",
+                "image": ["pohang1", "pohang2", "pohang3"],
+                "memo" :"오늘 너 웃는 모습이 너무 이뻤어!"
+            },
+            {
+                "name": "연산포 선착장",
+                "id" : "2",
+                "image": ["yeonsanpo1.jpg", "yeonsanpo2.jpg", "yeonsanpo3.jpg"],
+                "memo" :"한복 짱 이뻐!"
+            }
+        ],
+        "latitude" : 36.0190178,
+        "longitude" : 129.3434808
+        
+    },
+    {
+        "id" : "전주",
+        "places": [
+            {
+                "name": "한옥마을",
+                "id" : "3",
+                "image": ["pohang1", "pohang2", "pohang3"],
+                "memo" :"한복 짱 이뻐!"
+            },
+            {
+                "name": "막걸리 거리",
+                "id" : "4",
+                "image": ["yeonsanpo1.jpg", "yeonsanpo2.jpg", "yeonsanpo3.jpg"],
+                "memo" :"한복 짱 이뻐!"
+            }
+        ],
+        "latitude" : 35.8242238,
+        "longitude" : 127.1479532
+        
+    },
+    {
+        "id" : "제주",
+        "places": [
+            {
+                "name": "성산일출봉",
+                "id" : "5",
+                "image": ["pohang1", "pohang2", "pohang3"],
+                "memo" :"한복 짱 이뻐!"
+            },
+            {
+                "name": "이중섭 거리",
+                "id" : "6",
+                "image": ["yeonsanpo1.jpg", "yeonsanpo2.jpg", "yeonsanpo3.jpg"],
+                "memo" :"한복 짱 이뻐!"
+            }
+        ],
+        "latitude" : 33.525369,
+        "longitude" : 126.874237,
+        
+    },
+    {
+        "id" : "부산",
+        "places": [
+            {
+                "name": "자갈치 시장",
+                "id" : "7",
+                "image": ["pohang1", "pohang2", "pohang3"],
+                "memo" :"한복 짱 이뻐!"
+            },
+            {
+                "name": "해운대 해수욕장",
+                "id" : "8",
+                "image": ["yeonsanpo1.jpg", "yeonsanpo2.jpg", "yeonsanpo3.jpg"],
+                "memo" :"한복 짱 이뻐!"
+            }
+        ],
+        "latitude" : 35.1795543,
+        "longitude" : 129.0756416,
+        
+    },
+    
 ]
+ 

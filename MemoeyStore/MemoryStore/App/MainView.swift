@@ -9,24 +9,28 @@ import SwiftUI
 
 struct MainView: View {
     
-    @State var presentSideMenu = false
-    @State var selectedSideMenuTab = 0
-    
-    
     var body: some View {
             ZStack{
-                TabView(selection: $selectedSideMenuTab) {
-                    HomeView(presentSideMenu: $presentSideMenu)
-                        .tag(0)
-                    RepositoryView(presentSideMenu: $presentSideMenu)
-                        .tag(1)
-                    MapView(presentSideMenu: $presentSideMenu)
-                        .tag(2)
-                    ProfileView(presentSideMenu: $presentSideMenu)
-                        .tag(3)
+                TabView() {
+                    HomeView()
+                        .tabItem {
+                            Image(systemName: "house.fill")
+                            Text("Home")
+                        }
+                    PlusView()
+                        .tabItem {
+                            Image(systemName: "plus.app.fill")
+                            Text("Add")
+                        }
+                 
+                    MapView()
+                        .tabItem {
+                            Image(systemName: "map.fill")
+                            Text("Map")
+                            
+                        }
+                    
                 }
-                
-                SideMenu(isShowing: $presentSideMenu, content: AnyView(SideMenuView(selectedSideMenuTab: $selectedSideMenuTab, presentSideMenu: $presentSideMenu)))
             }
            
     }

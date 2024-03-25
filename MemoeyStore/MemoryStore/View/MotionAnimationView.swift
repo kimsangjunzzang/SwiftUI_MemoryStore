@@ -13,8 +13,9 @@ struct Position {
 
 
 struct MotionAnimationView: View {
-    @State private var randomCircle: Int = 20
+    @State private var randomCircle: Int = 10
     @State private var isAnimating = false
+    
     
     @State private var positionList: [Position]?
     @State private var screenSize: CGSize?
@@ -84,6 +85,5 @@ extension MotionAnimationView {
 struct MotionAnimationView_Previews: PreviewProvider {
   static var previews: some View {
     MotionAnimationView()
-      .previewDevice("iPhone 15 Pro")
   }
 }

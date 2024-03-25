@@ -11,9 +11,6 @@
 		1D16C6D42BABC427009180FC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1D16C6D32BABC427009180FC /* Assets.xcassets */; };
 		1D16C6D72BABC427009180FC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1D16C6D62BABC427009180FC /* Preview Assets.xcassets */; };
 		1D16C6DF2BABC592009180FC /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D16C6DE2BABC592009180FC /* MainView.swift */; };
-		1D16C6E12BABC615009180FC /* StorageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D16C6E02BABC615009180FC /* StorageView.swift */; };
-		1D16C6E42BABD43C009180FC /* SideMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D16C6E32BABD43C009180FC /* SideMenuView.swift */; };
-		1D16C6E62BABDE9F009180FC /* SideMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D16C6E52BABDE9F009180FC /* SideMenu.swift */; };
 		1D16C6EB2BAC0DBE009180FC /* RepositoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D16C6E72BAC0DBE009180FC /* RepositoryView.swift */; };
 		1D16C6EC2BAC0DBE009180FC /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D16C6E82BAC0DBE009180FC /* HomeView.swift */; };
 		1D16C6ED2BAC0DBE009180FC /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D16C6E92BAC0DBE009180FC /* MapView.swift */; };
@@ -23,6 +20,10 @@
 		1D16C6FA2BAC19D7009180FC /* CodableBundleExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D16C6F92BAC19D7009180FC /* CodableBundleExtension.swift */; };
 		1D16C6FD2BAC1A24009180FC /* locations.json in Resources */ = {isa = PBXBuildFile; fileRef = 1D16C6FC2BAC1A24009180FC /* locations.json */; };
 		1D16C6FF2BAC2959009180FC /* MotionAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D16C6FE2BAC2959009180FC /* MotionAnimationView.swift */; };
+		1D16C7012BB054AF009180FC /* MemoryDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D16C7002BB054AF009180FC /* MemoryDetailView.swift */; };
+		1D16C7052BB05725009180FC /* MemoryListItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D16C7042BB05725009180FC /* MemoryListItemView.swift */; };
+		1D16C7112BB08887009180FC /* PlusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D16C7102BB08887009180FC /* PlusView.swift */; };
+		1D16C7132BB13E1B009180FC /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D16C7122BB13E1B009180FC /* CameraView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,9 +32,6 @@
 		1D16C6D32BABC427009180FC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1D16C6D62BABC427009180FC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		1D16C6DE2BABC592009180FC /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
-		1D16C6E02BABC615009180FC /* StorageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageView.swift; sourceTree = "<group>"; };
-		1D16C6E32BABD43C009180FC /* SideMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuView.swift; sourceTree = "<group>"; };
-		1D16C6E52BABDE9F009180FC /* SideMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenu.swift; sourceTree = "<group>"; };
 		1D16C6E72BAC0DBE009180FC /* RepositoryView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepositoryView.swift; sourceTree = "<group>"; };
 		1D16C6E82BAC0DBE009180FC /* HomeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		1D16C6E92BAC0DBE009180FC /* MapView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
@@ -43,6 +41,10 @@
 		1D16C6F92BAC19D7009180FC /* CodableBundleExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodableBundleExtension.swift; sourceTree = "<group>"; };
 		1D16C6FC2BAC1A24009180FC /* locations.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = locations.json; sourceTree = "<group>"; };
 		1D16C6FE2BAC2959009180FC /* MotionAnimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotionAnimationView.swift; sourceTree = "<group>"; };
+		1D16C7002BB054AF009180FC /* MemoryDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoryDetailView.swift; sourceTree = "<group>"; };
+		1D16C7042BB05725009180FC /* MemoryListItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoryListItemView.swift; sourceTree = "<group>"; };
+		1D16C7102BB08887009180FC /* PlusView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlusView.swift; sourceTree = "<group>"; };
+		1D16C7122BB13E1B009180FC /* CameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,7 +101,6 @@
 			children = (
 				1D16C6CF2BABC425009180FC /* MemoryStoreApp.swift */,
 				1D16C6DE2BABC592009180FC /* MainView.swift */,
-				1D16C6E02BABC615009180FC /* StorageView.swift */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -107,14 +108,16 @@
 		1D16C6E22BABD426009180FC /* View */ = {
 			isa = PBXGroup;
 			children = (
+				1D16C7102BB08887009180FC /* PlusView.swift */,
 				1D16C6E82BAC0DBE009180FC /* HomeView.swift */,
-				1D16C6E72BAC0DBE009180FC /* RepositoryView.swift */,
 				1D16C6E92BAC0DBE009180FC /* MapView.swift */,
+				1D16C6E72BAC0DBE009180FC /* RepositoryView.swift */,
 				1D16C6F12BAC12E0009180FC /* ProfileView.swift */,
 				1D16C6F32BAC190A009180FC /* MapAnnotationVew.swift */,
-				1D16C6E32BABD43C009180FC /* SideMenuView.swift */,
-				1D16C6E52BABDE9F009180FC /* SideMenu.swift */,
 				1D16C6FE2BAC2959009180FC /* MotionAnimationView.swift */,
+				1D16C7002BB054AF009180FC /* MemoryDetailView.swift */,
+				1D16C7042BB05725009180FC /* MemoryListItemView.swift */,
+				1D16C7122BB13E1B009180FC /* CameraView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -214,16 +217,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1D16C6E12BABC615009180FC /* StorageView.swift in Sources */,
+				1D16C7052BB05725009180FC /* MemoryListItemView.swift in Sources */,
+				1D16C7132BB13E1B009180FC /* CameraView.swift in Sources */,
 				1D16C6F22BAC12E0009180FC /* ProfileView.swift in Sources */,
 				1D16C6EB2BAC0DBE009180FC /* RepositoryView.swift in Sources */,
+				1D16C7112BB08887009180FC /* PlusView.swift in Sources */,
 				1D16C6F72BAC196F009180FC /* LocationModel.swift in Sources */,
-				1D16C6E42BABD43C009180FC /* SideMenuView.swift in Sources */,
+				1D16C7012BB054AF009180FC /* MemoryDetailView.swift in Sources */,
 				1D16C6ED2BAC0DBE009180FC /* MapView.swift in Sources */,
 				1D16C6F42BAC190A009180FC /* MapAnnotationVew.swift in Sources */,
 				1D16C6DF2BABC592009180FC /* MainView.swift in Sources */,
 				1D16C6EC2BAC0DBE009180FC /* HomeView.swift in Sources */,
-				1D16C6E62BABDE9F009180FC /* SideMenu.swift in Sources */,
 				1D16C6FF2BAC2959009180FC /* MotionAnimationView.swift in Sources */,
 				1D16C6FA2BAC19D7009180FC /* CodableBundleExtension.swift in Sources */,
 				1D16C6D02BABC425009180FC /* MemoryStoreApp.swift in Sources */,

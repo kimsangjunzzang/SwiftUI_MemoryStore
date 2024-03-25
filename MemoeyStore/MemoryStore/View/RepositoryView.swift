@@ -9,27 +9,22 @@ import SwiftUI
 
 struct RepositoryView: View {
     
-    @Binding var presentSideMenu: Bool
+    var location: [Place]
     
     var body: some View {
-        VStack{
-            HStack{
-                Button{
-                    presentSideMenu.toggle()
-                } label: {
-                    Image(systemName: "text.justify")
-                        .resizable()
-                        .frame(width: 22, height: 22)
-                        .foregroundColor(.white)
-                        
+        NavigationStack {
+            ScrollView(showsIndicators: false, content: {
+                VStack {
+                    ForEach(location) { location in
+                        NavigationLink(destination: MemoryDetailView(location: location)) {
+                            MemoryListItemView(location:location )
+                        }
+                        .padding(.vertical, 10)
+                    }
                 }
-                Spacer()
-            }
-            
-            Spacer()
-            Text("Repository View")
-            Spacer()
+                
+            })
         }
-        .padding(.horizontal, 24)
     }
 }
+
