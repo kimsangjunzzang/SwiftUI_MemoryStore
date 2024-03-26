@@ -13,18 +13,18 @@ struct RepositoryView: View {
     
     var body: some View {
         NavigationStack {
-            ScrollView(showsIndicators: false, content: {
-                VStack {
+                List {
                     ForEach(location) { location in
                         NavigationLink(destination: MemoryDetailView(location: location)) {
-                            MemoryListItemView(location:location )
+                            
+                            MemoryListItemView(location:location)
+                            
                         }
                         .padding(.vertical, 10)
                     }
                 }
                 
-            })
+            
         }
     }
 }
-

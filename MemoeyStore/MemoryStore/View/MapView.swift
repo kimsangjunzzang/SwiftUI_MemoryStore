@@ -19,7 +19,7 @@ struct MapView: View {
         return mapRegion
     }()
     
-    let locations: [NationalParkLocation] = Bundle.main.decode("locations.json")
+    let locations: [MemoryLocation] = Bundle.main.decode("locations.json")
     
     var body: some View {
         NavigationStack {

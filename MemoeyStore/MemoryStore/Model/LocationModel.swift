@@ -9,7 +9,7 @@ import Foundation
 import MapKit
 
 
-struct NationalParkLocation: Codable, Identifiable {
+struct MemoryLocation: Codable, Identifiable {
     var id: String
     let places: [Place]
     var latitude: Double

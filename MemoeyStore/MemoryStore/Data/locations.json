@@ -31,8 +31,14 @@
             {
                 "name": "막걸리 거리",
                 "id" : "4",
-                "image": ["yeonsanpo1.jpg", "yeonsanpo2.jpg", "yeonsanpo3.jpg"],
-                "memo" :"한복 짱 이뻐!"
+                "image": ["pohang2", "yeonsanpo2.jpg", "yeonsanpo3.jpg"],
+                "memo" :"막걸리 먹는게 개 웃기네 ㅋㅋ!"
+            },
+            {
+                "name": "전주 성당",
+                "id" : "5",
+                "image": ["pohang3", "yeonsanpo2.jpg", "yeonsanpo3.jpg"],
+                "memo" :"아멘~~~!"
             }
         ],
         "latitude" : 35.8242238,
@@ -44,13 +50,13 @@
         "places": [
             {
                 "name": "성산일출봉",
-                "id" : "5",
+                "id" : "6",
                 "image": ["pohang1", "pohang2", "pohang3"],
                 "memo" :"한복 짱 이뻐!"
             },
             {
                 "name": "이중섭 거리",
-                "id" : "6",
+                "id" : "7",
                 "image": ["yeonsanpo1.jpg", "yeonsanpo2.jpg", "yeonsanpo3.jpg"],
                 "memo" :"한복 짱 이뻐!"
             }
@@ -64,13 +70,13 @@
         "places": [
             {
                 "name": "자갈치 시장",
-                "id" : "7",
+                "id" : "8",
                 "image": ["pohang1", "pohang2", "pohang3"],
                 "memo" :"한복 짱 이뻐!"
             },
             {
                 "name": "해운대 해수욕장",
-                "id" : "8",
+                "id" : "9",
                 "image": ["yeonsanpo1.jpg", "yeonsanpo2.jpg", "yeonsanpo3.jpg"],
                 "memo" :"한복 짱 이뻐!"
             }

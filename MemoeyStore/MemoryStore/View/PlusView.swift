@@ -18,13 +18,13 @@ struct PlusView: View {
                                 .fill(Color.yellow)
                                 .frame(width: 100, height: 100)
                                 .opacity(0.6)
-                                
+                            
                             
                             Text("Camera")
                                 .foregroundStyle(.black)
                         }
-                        
                     }
+                    
                     
                     NavigationLink(destination: HomeView()){
                         ZStack {
@@ -40,6 +40,7 @@ struct PlusView: View {
                         
                     }
                 }
+                
                 
                 
                 HStack {
