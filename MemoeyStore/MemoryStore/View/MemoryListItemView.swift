@@ -12,37 +12,26 @@ struct MemoryListItemView: View {
     
     let location: Place
     
+    
     var body: some View {
-            HStack(alignment: .center, spacing: 16) {
+        
+            HStack(alignment: .center, spacing: 5) {
                 
                 Image(location.image[0])
                     .resizable()
                     .scaledToFill()
-                    .frame(width: 90, height: 90)
+                    .frame(width: UIScreen.main.bounds.width / 2.5, height: 70)
                     .clipShape(
                         RoundedRectangle(cornerRadius: 12)
                     )
+                    Spacer()
                 
+                Text("Date : 2024.01.21")
+                    .font(.footnote)
+                    
                 
-                VStack(alignment: .leading, spacing: 8) {
-                    
-                    Text(location.name)
-                        .font(.title2)
-                        .fontWeight(.heavy)
-                        .foregroundColor(.yellow)
-                    
-                    Text(location.memo)
-                        .font(.footnote)
-                        .multilineTextAlignment(.leading)
-                        .lineLimit(2)
-                        .padding(.trailing, 8)
-                    
-                } //: VSTACK
+                Spacer()
             }
-         
-        
-        
     }
 }
 
-// MARK: - PREVIEW

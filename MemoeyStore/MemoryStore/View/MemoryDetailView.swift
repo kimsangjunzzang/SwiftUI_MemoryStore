@@ -13,34 +13,46 @@ struct MemoryDetailView: View {
 
   var body: some View {
       
-    ScrollView(.vertical, showsIndicators: false) {
+   
       VStack(alignment: .center, spacing: 20) {
         
           Image(location.image[0])
-          .resizable()
-          .scaledToFit()
-      
-          Text(location.name)
-          .font(.headline)
-          .multilineTextAlignment(.leading)
-          .foregroundColor(.accentColor)
-          .padding(.horizontal)
+              .resizable()
+              .scaledToFit()
+              .padding(EdgeInsets(top: 0, leading: 0, bottom: 10, trailing: 0))
+          
+          ZStack{
+              
+              RoundedRectangle(cornerRadius: 20)
+                  .stroke(Color(.red))
+              
+              HStack{
+                  VStack(alignment: .leading){
+                      
+                      Text("\(location.name)에서...")
+                          .multilineTextAlignment(.leading)
+                          .font(.largeTitle)
+                          .foregroundColor(.accentColor)
+                      
+                      Text("date : 2024.02.12")
+                          .multilineTextAlignment(.trailing)
+                      
+                      Text("함께 남긴말 : \(location.memo)")
+                      
+                      Spacer()
+                  }
+                  .padding(20)
+                  Spacer()
+              }
+              
+              
+              
+          }
+          
 
       }
-      .navigationBarTitle(location.name, displayMode: .inline)
-    }
+      .padding(20)
+      
   }
 }
 
-
-
-struct MemoryDetailView_Previews: PreviewProvider {
-  static let locations: [Place] = Bundle.main.decode("locations.json")
-  
-  static var previews: some View {
-    NavigationView {
-      MemoryDetailView(location: locations[0])
-    }
-    .previewDevice("iPhone 12 Pro")
-  }
-}

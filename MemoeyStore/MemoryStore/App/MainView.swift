@@ -9,31 +9,48 @@ import SwiftUI
 
 struct MainView: View {
     
+    @State private var showMainView = false
+    
     var body: some View {
-            ZStack{
+        ZStack{
+            if showMainView{
                 TabView() {
                     HomeView()
                         .tabItem {
                             Image(systemName: "house.fill")
-                            Text("Home")
+                            Text("메인")
                         }
                     PlusView()
                         .tabItem {
                             Image(systemName: "plus.app.fill")
-                            Text("Add")
+                            Text("저장")
                         }
-                 
+                    
                     MapView()
                         .tabItem {
                             Image(systemName: "map.fill")
-                            Text("Map")
-                            
+                            Text("저장소")
                         }
-                    
                 }
+                .accentColor(.orange)
+                
+            }else{
+                SplashView()
+                    .onAppear{
+                        DispatchQueue.main.asyncAfter(deadline: .now() + 0.3){
+                            withAnimation {
+                                showMainView = true
+                            }
+                        }
+                    }
             }
-           
+            
+            
+        }
+        
+        
     }
+        
 }
 
 #Preview {

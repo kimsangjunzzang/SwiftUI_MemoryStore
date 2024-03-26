@@ -12,7 +12,7 @@ struct CameraView: View {
     
     var body: some View {
         ZStack {
-            viewModel.cameraPreview.ignoresSafeArea()
+            viewModel.cameraPreview
                 .onAppear {
                     viewModel.configure()
                 }
@@ -123,6 +123,7 @@ struct CameraView: View {
             .foregroundColor(.white)
         }
         .opacity(viewModel.shutterEffect ? 0 : 1)
+        .navigationBarBackButtonHidden(true)
     }
 }
 

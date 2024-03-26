@@ -13,7 +13,7 @@ struct Position {
 
 
 struct MotionAnimationView: View {
-    @State private var randomCircle: Int = 10
+    @State private var randomCircle: Int = 20
     @State private var isAnimating = false
     
     
@@ -26,11 +26,12 @@ struct MotionAnimationView: View {
   var body: some View {
     GeometryReader { geometry in
       ZStack {
+          LinearGradient(gradient: Gradient(colors: [.red,.yellow]), startPoint: .topLeading, endPoint: .bottomTrailing)
         ForEach(0...randomCircle, id: \.self) { item in
           Circle()
-                .foregroundColor(.yellow)
+                .foregroundColor(.white)
                 .opacity(0.5)
-                .frame(width: 100, height: 100, alignment: .center)
+                .frame(width: 70, height: 70, alignment: .center)
                 .scaleEffect(isAnimating ? 1 : 1)
             
             .position(
@@ -44,8 +45,9 @@ struct MotionAnimationView: View {
             }) //onAppera
         } //loop
       } //zstack
+      
     } //geometry
-    .ignoresSafeArea()
+    
     .onReceive(timer) { _ in
         generatePositions()
     }

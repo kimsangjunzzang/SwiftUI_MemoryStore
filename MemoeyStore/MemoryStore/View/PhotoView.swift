@@ -10,33 +10,77 @@ import SwiftUI
 struct PhotoView: View {
     
     @ObservedObject var viewModel: CameraViewModel
+    @State private var action: Int? = 0
     
     var body: some View {
-        VStack {
-            if let previewImage = viewModel.recentImage{
-                
-                ZStack{
-                    RoundedRectangle(cornerRadius: 15)
-                        .stroke(lineWidth: 3)
-                        .foregroundColor(.white)
-                        .frame(width: 75,height: 75)
-                    
+        NavigationStack{
+            VStack {
+                if let previewImage = viewModel.recentImage{
                     Image(uiImage: previewImage)
                         .resizable()
-                        .scaledToFill()
-                        .frame(width: 75,height: 75)
-                        .clipShape(RoundedRectangle(cornerRadius: 15))
-                        .aspectRatio(1,contentMode: .fit)
+                        .scaledToFit()
+                        .frame(width: UIScreen.main.bounds.width,height: UIScreen.main.bounds.height * 2 / 3)
+                }else{
+                    Rectangle()
+                        .frame(width: UIScreen.main.bounds.width,height: UIScreen.main.bounds.height * 2 / 3)
+                    
                 }
+                Spacer()
                 
-            }else{
-                RoundedRectangle(cornerRadius: 15)
-                    .stroke(lineWidth: 3)
-                    .foregroundColor(.white)
-                    .frame(width: 75,height: 75)
+                NavigationLink(destination: PlusView(), tag: 1, selection: $action) {
+                    EmptyView()
+                }
+                NavigationLink(destination: CameraView(), tag: 2, selection: $action) {
+                    EmptyView()
+                }
+                HStack {
+                    Button(action: {
+                        self.action = 1
+                    }, label: {
+                        ZStack {
+                            RoundedRectangle(cornerRadius: 20)
+                                .fill(LinearGradient(gradient: Gradient(colors: [.red,.yellow]), startPoint: .topLeading, endPoint: .bottomTrailing))
+                                .frame(width: 150, height: 100)
+                                .opacity(0.8)
+                            
+                            
+                            Text("추억 담기")
+                                .foregroundStyle(.white)
+                                .font(.title2)
+                            
+                        }
+                        .shadow(radius: 10,x:5,y:5)
+                    })
+                    .padding()
+                    
+                    Button(action: {
+                        self.action = 2
+                        
+                    }, label: {
+                        ZStack {
+                            RoundedRectangle(cornerRadius: 20)
+                                .fill(LinearGradient(gradient: Gradient(colors: [.red,.yellow]), startPoint: .topLeading, endPoint: .bottomTrailing))
+                                .frame(width: 150, height: 100)
+                                .opacity(0.8)
+                            
+                            
+                            
+                            Text("다시 찍기")
+                                .foregroundStyle(.white)
+                                .font(.title2)
+                            
+                            
+                            
+                        }
+                        .shadow(radius: 10,x:5,y:5)
+                    }).padding()
+                    
+                }
+                Spacer()
+                
             }
+            .navigationBarBackButtonHidden(true)
         }
-        .background(.red)
     }
 }
 

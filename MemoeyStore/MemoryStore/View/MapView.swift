@@ -12,7 +12,7 @@ struct MapView: View {
     @State private var tag:Int? = nil
     @State private var region: MKCoordinateRegion = {
         
-        var mapCoordinates = CLLocationCoordinate2D(latitude: 38.5661791, longitude: 127.4)
+        var mapCoordinates = CLLocationCoordinate2D(latitude: 37.5661791, longitude: 127.4)
         var mapZoomLevel = MKCoordinateSpan(latitudeDelta: 6, longitudeDelta: 6)
         var mapRegion = MKCoordinateRegion(center: mapCoordinates, span: mapZoomLevel)
         
@@ -25,7 +25,7 @@ struct MapView: View {
         NavigationStack {
             ZStack{
                 Map(coordinateRegion: $region, annotationItems: locations, annotationContent: { item in
-                    MapAnnotation(coordinate: item.location) { NavigationLink(destination: RepositoryView(location: item.places)){
+                    MapAnnotation(coordinate: item.location) { NavigationLink(destination: RepositoryView(city: item, location: item.places)){
                         MapAnnotationView()
                     }
                         
@@ -33,8 +33,9 @@ struct MapView: View {
                     }
                 })
             }
-            .ignoresSafeArea()
+            
         }
+        
         
         
     }

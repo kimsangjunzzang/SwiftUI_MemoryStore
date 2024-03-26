@@ -3,76 +3,135 @@
 //  MemoryStore
 //
 //  Created by 김상준 on 3/25/24.
-//
 
 import SwiftUI
 
 struct PlusView: View {
     var body: some View {
         NavigationStack {
-            VStack {
-                HStack {
-                    NavigationLink(destination: CameraView()){
-                        ZStack {
-                            Circle()
-                                .fill(Color.yellow)
-                                .frame(width: 100, height: 100)
-                                .opacity(0.6)
-                            
-                            
-                            Text("Camera")
-                                .foregroundStyle(.black)
-                        }
-                    }
+            ZStack{
+                LinearGradient(gradient: Gradient(colors: [.red,.yellow]), startPoint: .topLeading, endPoint: .bottomTrailing)
+                VStack{
                     
+                    Spacer()
                     
-                    NavigationLink(destination: HomeView()){
-                        ZStack {
-                            Circle()
-                                .fill(Color.yellow)
-                                .frame(width: 100, height: 100)
-                                .opacity(0.6)
+                    Text("어떤 추억을 저장하실 건가요?")
+                        .fontWeight(.bold)
+                        .foregroundStyle(.white)
+                        .font(.title)
+                    
+                    Spacer()
+                    
+                    ZStack{
+                        
+                        VStack {
+                            HStack {
+                                NavigationLink(destination: CameraView()){
+                                    ZStack {
+                                        RoundedRectangle(cornerRadius: 20)
+                                            .fill(Color.white)
+                                            .frame(width: 150, height: 100)
+                                            .opacity(0.8)
+                                        
+                                        
+                                        VStack {
+                                            Image(systemName: "camera")
+                                                .foregroundStyle(.orange)
+                                                .font(.largeTitle)
+                                                .padding(.bottom,1)
+                                            Text("사진")
+                                                .foregroundStyle(.orange)
+                                                .font(.title2)
+                                        }
+                                        
+                                        
+                                    }
+                                    .shadow(radius: 20)
+                                }
+                                
+                                
+                                NavigationLink(destination: HomeView()){
+                                    ZStack {
+                                        RoundedRectangle(cornerRadius: 20)
+                                            .fill(Color.white)
+                                            .frame(width: 150, height: 100)
+                                            .opacity(0.8)
+                                        
+                                        VStack {
+                                            Image(systemName: "video")
+                                                .foregroundStyle(.orange)
+                                                .font(.largeTitle)
+                                                .padding(.bottom,1)
+                                            Text("영상")
+                                                .foregroundStyle(.orange)
+                                                .font(.title2)
+                                        }
+                                    }
+                                    .shadow(radius: 20)
+                                    
+                                }
+                            }
                             
                             
-                            Text("Video")
-                                .foregroundStyle(.black)
+                            
+                            HStack {
+                                NavigationLink(destination: HomeView()){
+                                    ZStack {
+                                        RoundedRectangle(cornerRadius: 20)
+                                            .fill(Color.white)
+                                            .frame(width: 150, height: 100)
+                                            .opacity(0.8)
+                                        
+                                        VStack {
+                                            Image(systemName: "recordingtape")
+                                                .foregroundStyle(.orange)
+                                                .font(.largeTitle)
+                                                .padding(.bottom,1)
+                                            Text("음성 메모")
+                                                .foregroundStyle(.orange)
+                                                .font(.title2)
+                                        }
+                                    }
+                                    .shadow(radius: 20)
+                                }
+                                
+                                NavigationLink(destination: MemoView()){
+                                    ZStack {
+                                        RoundedRectangle(cornerRadius: 20)
+                                            .fill(Color.white)
+                                            .frame(width: 150, height: 100)
+                                            .opacity(0.8)
+                                        
+                                        VStack {
+                                            Image(systemName: "text.bubble")
+                                                .foregroundStyle(.orange)
+                                                .font(.largeTitle)
+                                                .padding(.bottom,1)
+                                            Text("텍스트")
+                                                .foregroundStyle(.orange)
+                                                .font(.title2)
+                                        }
+                                    }
+                                    .shadow(radius: 20)
+                                    
+                                    
+                                }
+                            }
                         }
                         
                     }
-                }
-                
-                
-                
-                HStack {
-                    NavigationLink(destination: HomeView()){
-                        ZStack {
-                            Circle()
-                                .fill(Color.yellow)
-                                .frame(width: 100, height: 100)
-                                .opacity(0.6)
-                            
-                            Text("Record")
-                                .foregroundStyle(.black)
-                        }
-                    }
                     
-                    NavigationLink(destination: HomeView()){
-                        ZStack {
-                            Circle()
-                                .fill(Color.yellow)
-                                .opacity(0.6)
-                            .frame(width: 100, height: 100)
-                            Text("Text")
-                                .foregroundStyle(.black)
-                        }
-                        
-                        
-                    }
+                    Spacer()
                 }
             }
+            .navigationBarBackButtonHidden(true)
+            
         }
+        
     }
+    
 }
+
 
 #Preview {
     PlusView()
