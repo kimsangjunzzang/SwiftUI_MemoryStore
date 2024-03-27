@@ -28,15 +28,12 @@ struct MapView: View {
                     MapAnnotation(coordinate: item.location) { NavigationLink(destination: RepositoryView(city: item, location: item.places)){
                         MapAnnotationView()
                     }
-                        
-                        
                     }
                 })
+                .colorScheme(.dark)
             }
-            
+            .edgesIgnoringSafeArea(.top)
         }
-        
-        
         
     }
 }

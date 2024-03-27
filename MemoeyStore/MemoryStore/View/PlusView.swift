@@ -125,6 +125,7 @@ struct PlusView: View {
                 }
             }
             .navigationBarBackButtonHidden(true)
+            .edgesIgnoringSafeArea(.top)
             
         }
         
