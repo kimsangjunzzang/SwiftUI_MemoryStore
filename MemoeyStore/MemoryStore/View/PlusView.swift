@@ -14,11 +14,18 @@ struct PlusView: View {
                 VStack{
                     
                     Spacer()
-                    
-                    Text("어떤 추억을 저장하실 건가요?")
-                        .fontWeight(.bold)
-                        .foregroundStyle(.white)
-                        .font(.title)
+                    ZStack{
+                        
+                        RoundedRectangle(cornerRadius: 20)
+                            .fill(Color.white)
+                            .frame(width: 330, height: 80)
+                            .opacity(0.8)
+                        
+                        Text("어떤 추억을 저장하실 건가요?")
+                            .fontWeight(.bold)
+                            .foregroundStyle(.orange)
+                            .font(.title2)
+                    }
                     
                     Spacer()
                     
