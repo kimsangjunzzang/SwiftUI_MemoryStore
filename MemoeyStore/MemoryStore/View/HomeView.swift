@@ -8,9 +8,7 @@
 import SwiftUI
 
 struct HomeView: View {
-    
-    let camera = UIImagePickerController()
-    
+
     var body: some View {
         VStack{
             
