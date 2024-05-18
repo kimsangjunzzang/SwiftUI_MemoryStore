@@ -1,8 +1,8 @@
 //
-//  MemoeyStoreApp.swift
-//  MemoeyStore
+//  MemoryStoreApp.swift
+//  MemoryStore
 //
-//  Created by 김상준 on 3/21/24.
+//  Created by 김상준 on 5/19/24.
 //
 
 import SwiftUI

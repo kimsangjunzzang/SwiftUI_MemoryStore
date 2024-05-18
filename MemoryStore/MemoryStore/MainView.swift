@@ -1,8 +1,8 @@
 //
-//  MainView.swift
-//  MemoeyStore
+//  ContentView.swift
+//  MemoryStore
 //
-//  Created by 김상준 on 3/21/24.
+//  Created by 김상준 on 5/19/24.
 //
 
 import SwiftUI
@@ -13,7 +13,7 @@ struct MainView: View {
     
     var body: some View {
         ZStack{
-            if showMainView{
+           
                 TabView() {
                     HomeView()
                         .tabItem {
@@ -34,16 +34,7 @@ struct MainView: View {
                 }
                 .accentColor(.orange)
                 
-            }else{
-                SplashView()
-                    .onAppear{
-                        DispatchQueue.main.asyncAfter(deadline: .now() + 0.3){
-                            withAnimation {
-                                showMainView = true
-                            }
-                        }
-                    }
-            }
+            
             
             
         }
